@@ -9,7 +9,7 @@
 
 ## DEMO1: Copilot Foundations
 
-### Initial Setup: Visual Studio Workspace
+### Initial Setup: VS Code Workspace
 
 ---
 
@@ -214,7 +214,7 @@ At this point, you should already have multiple agent session audit logs created
 
 ### Space Invaders Game Demo
 
-Launch Copilot CLI in your standalone or VS Code terminal. The prompt leverages Azure MCP server to deploy the game to an Azure Web App so the Azure MCP server should be up and running before you execute the prompt. 
+**NOTE** Launch Copilot CLI in your standalone or VS Code terminal. The prompt leverages Azure MCP server to deploy the game to an Azure Web App so the Azure MCP server should be up and running before you execute the prompt. 
 
 **[PROMPT]**
 ```
