@@ -7,6 +7,19 @@ Welcome to the OctoCAT Supply Website - your go-to demo for showcasing the incre
 > [!NOTE]
 > For a walkthrough of all demos, check out the [Demo Walkthroughs](./demo/walkthroughs/README.md).
 
+## ✨ What Makes This Demo Special
+
+This isn't just another demo app - it's a carefully crafted showcase that demonstrates the full spectrum of GitHub's AI capabilities:
+
+- 🤖 **Copilot Agent Mode & Vision** - Watch Copilot understand UI designs and implement complex features across multiple files
+- 🎭 **MCP Server Integration** - Demonstrate extended capabilities with Playwright for testing and GitHub API integration
+- 🧪 **Test Generation** - Exhibit Copilot's ability to analyze coverage and generate meaningful tests
+- 🔄 **CI/CD & IaC** - Generate deployment workflows and infrastructure code with natural language
+- 🎯 **Custom Instructions** - Show how Copilot can be tailored to understand internal frameworks and standards
+- 📜 **Custom Prompt Files** - Automate repetitive tasks and documentation updates with ease
+
+---
+
 ## 🏗️ Architecture
 
 The application is built using modern TypeScript with a clean separation of concerns:

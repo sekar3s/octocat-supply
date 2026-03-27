@@ -1,13 +1,29 @@
 {
   "version": 1,
   "hooks": {
-    "sessionStart": [
+    "PostToolUse": [
+      {
+        "type": "command",
+        "bash": ".github/hooks/log-tool-usage.sh",
+        "powershell": "Write-Host 'log-tool-usage not implemented for PowerShell'",
+        "cwd": ".",
+        "timeoutSec": 10
+      }
+    ],
+    "SessionStart": [
       {
         "type": "command",
         "bash": "echo \"[$(date)] Session started\" >> .agent.log",
         "powershell": "Add-Content -Path .agent.log -Value \"[$(Get-Date)] Session started\"",
         "cwd": ".",
         "timeoutSec": 10
+      },
+      {
+        "type": "command",
+        "bash": ".github/hooks/session-start-audit.sh",
+        "powershell": "Write-Host 'session-start-audit not implemented for PowerShell'",
+        "cwd": ".",
+        "timeoutSec": 15
       }
     ],
     "UserPromptSubmit": [
@@ -27,7 +43,14 @@
         "cwd": ".",
         "timeoutSec": 10
       },
-      // comment this in if you want automatic commits after each agent session
+      {
+        "type": "command",
+        "bash": ".github/hooks/session-stop-audit.sh",
+        "powershell": "Write-Host 'session-stop-audit not implemented for PowerShell'",
+        "cwd": ".",
+        "timeoutSec": 30
+      }
+      // comment this out if you want automatic commits after each agent session
       // {
       //   "type": "command",
       //   "bash": ".github/hooks/checkpoint-commit.sh",
