@@ -49,4 +49,4 @@ Be concise, actionable, and cite a rationale ("because" clause) for non-trivial 
 ---
 If new subsystems are added (e.g., `mobile/`, `worker/`), create a new `*.instructions.md` with `applyTo` globs instead of bloating this file.
 
-# Testing a push
+# Testing a push new
