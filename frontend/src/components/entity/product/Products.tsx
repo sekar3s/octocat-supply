@@ -191,13 +191,13 @@ export default function Products() {
                     {product.name}
                   </h3>
                   <p
-                    className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mb-3 flex-grow transition-colors duration-300`}
+                    className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} mb-4 flex-grow transition-colors duration-300`}
                   >
                     {product.description}
                   </p>
 
                   {/* Star rating */}
-                  <div className="mb-3">
+                  <div className="mb-4">
                     <StarRating
                       productId={product.productId}
                       productName={product.name}

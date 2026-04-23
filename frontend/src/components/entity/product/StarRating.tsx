@@ -70,6 +70,7 @@ export default function StarRating({ productId, productName, rating, onRate }: S
         className="text-sm text-red-500 font-semibold ml-1 min-w-[2rem]"
         aria-live="polite"
         aria-atomic="true"
+        aria-label={rating > 0 ? `${rating} out of 5 stars` : 'Not yet rated'}
       >
         {rating > 0 ? `${rating}/5` : ''}
       </span>
