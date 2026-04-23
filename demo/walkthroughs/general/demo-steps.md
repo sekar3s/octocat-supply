@@ -121,7 +121,7 @@ Can you review my code and ensure it follows the best practices outlined in the 
 
 **[PROMPT]** `[Create a new Cloud Agent session]` 
 ```
-Add a star review option to each of the products right on the product page. Make the star buttons flashy and easier to click. Make the color of the buttons RED!
+Add a star review option to each of the products right on the product page. Make the star buttons flashy and easier to click. Make the color of the buttons RED! Test the functionality and include screenshots of the star review feature in the PR so that it can be reviewed easily.
 ```
 
 ---
