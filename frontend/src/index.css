@@ -97,3 +97,20 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+
+/* Star rating — glow effect for filled stars */
+.star-glow {
+  filter: drop-shadow(0 0 6px rgba(239, 68, 68, 0.85));
+}
+
+/* Star rating — pop animation played when a rating is submitted */
+@keyframes star-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.5) rotate(-10deg); }
+  70%  { transform: scale(1.2) rotate(6deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.star-pop {
+  animation: star-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}

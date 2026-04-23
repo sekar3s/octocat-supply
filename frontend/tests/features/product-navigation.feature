@@ -21,3 +21,15 @@ Feature: Product catalog discovery
     When I search for "Space Tuna"
     Then I see the empty state message "No products found"
     And I am prompted to adjust the search filters
+
+  Scenario: Rate a product with stars
+    Given I am viewing the product catalog
+    And product cards are visible
+    When I click the 4th star on a product card
+    Then that product shows 4 filled red stars
+    And the rating label reads "4/5"
+
+  Scenario: Rating persists when product modal is opened
+    Given I have rated a product 3 stars
+    When I open the product detail modal
+    Then the modal shows 3 filled red stars for that product
